@@ -1,12 +1,12 @@
 public class ArrayLoop {
 
-    public static String getElementOutOfArray(int position) {
-        String[] stringArray = new String[100];
+    public static String[] generateStudentNames(int numberOfStudents) {
+        String[] studentNames = new String[numberOfStudents];
 
-        for (int i = 0; i < 100; i++) {
-            stringArray[i] = "Student " + i;
+        for (int i = 0; i < studentNames.length; i++) {
+            studentNames[i] = "Student " + (i + 1);
         }
-        return stringArray[position];
+        return studentNames;
     }
 }
 

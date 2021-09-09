@@ -1,21 +1,19 @@
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayLoopTest {
-    @ParameterizedTest
-    @CsvSource({
-            "0, 'Student 0'",
-            "1, 'Student 1'",
-            "50, 'Student 50'",
-            "99, 'Student 99'",
-    })
 
-    public void checkArrayLoop(int position, String expected) {
-        //When
-        String actual = ArrayLoop.getElementOutOfArray(position);
-        //Then
-        assertEquals(expected, actual);
+    @Test
+    void testGenerateStudentNames(){
+        //GIVEN
+        int numberOfStudents = 3;
+        String [] expected = {"Student 1", "Student 2", "Student 3"};
+
+        //WHEN
+        String[] actual = ArrayLoop.generateStudentNames(numberOfStudents);
+
+        //THEN
+        assertArrayEquals(expected, actual);
     }
 }
