@@ -4,7 +4,7 @@ public class Alarm {
         System.out.println(giveAlert(personen, "gelb"));
     }
 
-    public static String giveAlert(int personen, String alarmLevel ) {
+    public static String giveAlert(int personen, String alarmLevel) {
         int maxPersonen;
 
         switch (alarmLevel) {

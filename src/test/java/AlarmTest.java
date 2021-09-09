@@ -44,7 +44,7 @@ public class AlarmTest {
 
 
     @Test
-    public void giveAlertTestThirtyonePersonsRed() {
+    public void giveAlertTestThirtyOnePersonsRed() {
         //GIVE
         int a = 31;
         String alarmLevel = "rot";
@@ -70,7 +70,7 @@ public class AlarmTest {
     }
 
     @Test
-    public void giveAlertTestThirtyonePersonsGreen() {
+    public void giveAlertTestThirtyOnePersonsGreen() {
         //GIVE
         int a = 31;
         String alarmLevel = "grün";
@@ -83,7 +83,7 @@ public class AlarmTest {
     }
 
     @Test
-    public void giveAlertTestSixtyonePersonsRed() {
+    public void giveAlertTestSixtyOnePersonsRed() {
         //GIVE
         int a = 61;
         String alarmLevel = "rot";
@@ -109,7 +109,7 @@ public class AlarmTest {
     }
 
     @Test
-    public void giveAlertTestSixtyonePersonsGreen() {
+    public void giveAlertTestSixtyOnePersonsGreen() {
         //GIVE
         int a = 61;
         String alarmLevel = "grün";
