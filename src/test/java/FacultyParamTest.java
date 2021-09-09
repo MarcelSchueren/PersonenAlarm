@@ -16,7 +16,7 @@ public class FacultyParamTest {
 
     public void checkFaculty(int input, int expected) {
         //When
-        int actual = Faculty.faculty(input);
+        int actual = Faculty.generateFaculty(input);
         //Then
         assertEquals(expected, actual);
     }

@@ -10,7 +10,7 @@ class FacultyTest {
         int number = 0;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(1, result);
@@ -22,7 +22,7 @@ class FacultyTest {
         int number = 1;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(1, result);
@@ -34,7 +34,7 @@ class FacultyTest {
         int number = 2;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(2, result);
@@ -46,7 +46,7 @@ class FacultyTest {
         int number = 3;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(6, result);
@@ -58,7 +58,7 @@ class FacultyTest {
         int number = 4;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(24, result);
@@ -70,7 +70,7 @@ class FacultyTest {
         int number = 5;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(120, result);
@@ -82,7 +82,7 @@ class FacultyTest {
         int number = 10;
 
         //WHEN
-        int result = Faculty.faculty(number);
+        int result = Faculty.generateFaculty(number);
 
         //THEN
         Assertions.assertEquals(3628800, result);
