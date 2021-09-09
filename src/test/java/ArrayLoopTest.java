@@ -8,6 +8,7 @@ class ArrayLoopTest {
     @CsvSource({
             "0, 'Student 0'",
             "1, 'Student 1'",
+            "50, 'Student 50'",
             "99, 'Student 99'",
     })
 
