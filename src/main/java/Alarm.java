@@ -20,6 +20,7 @@ public class Alarm {
             default:
                 maxPersonen = 0;
                 System.out.println("Could not match alarmlevel");
+                break;
         }
 
         if (personen > maxPersonen) {
