@@ -4,38 +4,160 @@ import org.junit.jupiter.api.Test;
 public class AlarmTest {
 
     @Test
-    public void giveAlertTestOnePerson() {
+    public void giveAlertTestOnePersonRed() {
         //GIVE
         int a = 1;
+        String alarmLevel = "rot";
 
         //WHEN
-        String result = Alarm.giveAlert(a);
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Zu viele Personen", result);
+    }
+
+    @Test
+    public void giveAlertTestOnePersonYellow() {
+        //GIVE
+        int a = 1;
+        String alarmLevel = "gelb";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
 
         //THEN
         Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
     }
 
     @Test
-    public void giveAlertTestThirtyPersons() {
+    public void giveAlertTestOnePersonGreen() {
         //GIVE
-        int a = 30;
+        int a = 1;
+        String alarmLevel = "grün";
 
         //WHEN
-        String result = Alarm.giveAlert(a);
+        String result = Alarm.giveAlert(a, alarmLevel);
 
         //THEN
-        Assertions.assertEquals("Genau 30 Personen", result);
+        Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
     }
 
+
     @Test
-    public void giveAlertTestFiftyPersons() {
+    public void giveAlertTestThirtyonePersonsRed() {
         //GIVE
-        int a = 50;
+        int a = 31;
+        String alarmLevel = "rot";
 
         //WHEN
-        String result = Alarm.giveAlert(a);
+        String result = Alarm.giveAlert(a, alarmLevel);
 
         //THEN
         Assertions.assertEquals("Zu viele Personen", result);
     }
+
+    @Test
+    public void giveAlertTestThirtyOnePersonsYellow() {
+        //GIVE
+        int a = 31;
+        String alarmLevel = "gelb";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Zu viele Personen", result);
+    }
+
+    @Test
+    public void giveAlertTestThirtyonePersonsGreen() {
+        //GIVE
+        int a = 31;
+        String alarmLevel = "grün";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Maximale Personenzahl nicht überschritten", result);
+    }
+
+    @Test
+    public void giveAlertTestSixtyonePersonsRed() {
+        //GIVE
+        int a = 61;
+        String alarmLevel = "rot";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Zu viele Personen", result);
+    }
+
+    @Test
+    public void giveAlertTestSixtyOnePersonsYellow() {
+        //GIVE
+        int a = 61;
+        String alarmLevel = "gelb";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Zu viele Personen", result);
+    }
+
+    @Test
+    public void giveAlertTestSixtyonePersonsGreen() {
+        //GIVE
+        int a = 61;
+        String alarmLevel = "grün";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Zu viele Personen", result);
+    }
+
+    @Test
+    public void giveAlertTestZeroPersonsRed() {
+        //GIVE
+        int a = 0;
+        String alarmLevel = "rot";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Maximale Personenzahl erreicht", result);
+    }
+
+    @Test
+    public void giveAlertThirtyPersonsYellow() {
+        //GIVE
+        int a = 30;
+        String alarmLevel = "gelb";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Maximale Personenzahl erreicht", result);
+    }
+
+    @Test
+    public void giveAlertTestSixtyPersonsGreen() {
+        //GIVE
+        int a = 60;
+        String alarmLevel = "grün";
+
+        //WHEN
+        String result = Alarm.giveAlert(a, alarmLevel);
+
+        //THEN
+        Assertions.assertEquals("Maximale Personenzahl erreicht", result);
+    }
+
 }
